@@ -12,7 +12,7 @@ terrace -i <input.bam> -o <output.gtf> -fa <reference-genome.fa> --read_length <
 ```
 
 The `input.bam` is the read alignment file.
-```
+
 The reconstructed circular transcripts shall be written as GTF format into `output.gtf`.
 
 `reference-genome.fa` is the reference genome file in fasta format. We recommended to use Gencode GRCh38 (https://www.gencodegenes.org/human/release_38.html) for simulated data and GRCh37 (https://www.gencodegenes.org/human/release_37lift37.html) for biological data for reproducibility of results.
