@@ -24,7 +24,7 @@ It is recommended to run CIRI-full step by step instead of using the full pipeli
 
 The simulated paired-end reads used in TERRACE can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The total-RNA paired-end reads from human tissues used in TERRACE can be downloaded from BIGD (accession number: PRJCA000751).
 
-We recommend to use [GRCh38 reference/annotation](https://ftp.ensembl.org/pub/release-97/gtf/homo_sapiens/Homo_sapiens.GRCh38.97.gtf.gz) for simulated data and [GRCh37 reference](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/GRCh37_mapping/GRCh37.primary_assembly.genome.fa.gz),  [GRCh37 annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/GRCh37_mapping/gencode.v43lift37.basic.annotation.gtf.gz) for biological data to ensure reproducibility.
+We recommend to use [GRCh38 reference](https://ftp.ensembl.org/pub/release-97/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz), [GRCh38 annotation](https://ftp.ensembl.org/pub/release-97/gtf/homo_sapiens/Homo_sapiens.GRCh38.97.gtf.gz) for simulated data and [GRCh37 reference](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/GRCh37_mapping/GRCh37.primary_assembly.genome.fa.gz), [GRCh37 annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_43/GRCh37_mapping/gencode.v43lift37.basic.annotation.gtf.gz) for biological data to ensure reproducibility of results.
 
 # Convert CIRI-vis Output
 
