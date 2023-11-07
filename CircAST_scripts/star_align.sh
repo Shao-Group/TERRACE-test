@@ -11,13 +11,13 @@ STAR --runThreadN 8 \
      --genomeFastaFiles $ref\
 
 #mapping
-STAR --runThreadN 8 \
+STAR --runThreadN 8\
      --outSAMstrandField intronMotif\
-     --chimSegmentMin 20 \
-     --genomeDir $genome \
+     --chimSegmentMin 20\
+     --genomeDir $genome\
      --readFilesIn paired-end_1.fq paired-end_2.fq\
      --outFileNamePrefix "$out"\
+     --chimOutType WithinBAM\
+     --outSAMtype BAM SortedByCoordinate
 
-#output [prefix]_Chimeric.out.junction 
-
-
+# output [prefix]_Aligned.sortedByCoord.out.bam
