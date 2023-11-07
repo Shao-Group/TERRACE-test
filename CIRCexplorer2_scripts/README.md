@@ -1,6 +1,6 @@
 # Download and Install CIRCexplorer2
 
-CIRCexplorer2 can downloaded and installed using instructions from https://github.com/YangLab/CIRCexplorer2. 
+CIRCexplorer2 can be downloaded and installed using instructions from https://github.com/YangLab/CIRCexplorer2. 
 
 # Run CIRCexplorer2
 

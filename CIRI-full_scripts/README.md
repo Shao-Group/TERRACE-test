@@ -1,6 +1,6 @@
 # Download and Install CIRI-full and CIRI-vis
 
-CIRI-full jar file can downloaded from https://github.com/bioinfo-biols/CIRI-full/releases/tag/v2.1.2. Please make sure to use this latest jar file and not any older version.
+CIRI-full jar file can be downloaded from https://github.com/bioinfo-biols/CIRI-full/releases/tag/v2.1.2. Please make sure to use this latest jar file and not any older version.
 
 CIRI-full uses of CIRI2, CIRI-AS in its pipeline. They are avilable inside the CIRI-full package (https://sourceforge.net/projects/ciri-full/) To generate the full structure of circular RNA isoforms CIRI-vis (https://github.com/bioinfo-biols/CIRI-vis) needs to be run on the CIRI-full output. The versions to be used for reproducibility are as follows.
 

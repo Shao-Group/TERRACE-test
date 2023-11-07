@@ -1,6 +1,6 @@
 # Download and Install CircAST
 
-CircAST can downloaded and installed using instructions from https://github.com/xiaofengsong/CircAST. Note that we slightly modify one of the scripts, `CircAST.py`, to adapt to our data and the modified script is provided in the folder as `CircAST_modfied.py`. please use this script instead of the `CircAST.py` to ensure reprodicibility of results.
+CircAST can be downloaded and installed using instructions from https://github.com/xiaofengsong/CircAST. Note that we slightly modify one of the scripts, `CircAST.py`, to adapt to our data and the modified script is provided in the folder as `CircAST_modfied.py`. please use this script instead of the `CircAST.py` to ensure reprodicibility of results.
 
 # Run CircAST
 
