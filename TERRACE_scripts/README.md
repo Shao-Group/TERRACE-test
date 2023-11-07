@@ -1,6 +1,6 @@
 # Download Data 
 
-The STAR alignments of a set of 10 simulated paired-end RNA-seq samples and 8 biological samples
+The STAR alignments of a set of 10 simulated and 8 biological paired-end RNA-seq samples
 are available at [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38).
 TERRACE usually take a few minutes to an hour to assemble a typical aligned RNA-seq sample.
 
@@ -15,7 +15,7 @@ The `input.bam` is the read alignment file.
 
 The reconstructed circular transcripts shall be written as GTF format into `output.gtf`.
 
-`reference-genome.fa` is the reference genome file in fasta format. We recommend to use Gencode GRCh38 (https://www.gencodegenes.org/human/release_38.html) for simulated data and GRCh37 (https://www.gencodegenes.org/human/release_37lift37.html) for biological data to ensure reproducibility.
+`reference-genome.fa` is the reference genome file in fasta format. We recommend to use Gencode GRCh38 (https://www.gencodegenes.org/human/release_38.html) for simulated data and GRCh37 (https://www.gencodegenes.org/human/release_43lift37.html) for biological data to ensure reproducibility.
 
 `length-of-paired-end-reads` is the length of the reads used to produce the alignment file (100 for simulated data, 150 for biological data).
 
