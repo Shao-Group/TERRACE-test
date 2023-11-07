@@ -15,7 +15,7 @@ The `input.bam` is the read alignment file.
 
 The reconstructed circular transcripts shall be written as GTF format into `output.gtf`.
 
-`reference-genome.fa` is the reference genome file in fasta format. We recommend to use Gencode GRCh38 (https://www.gencodegenes.org/human/release_38.html) for simulated data and GRCh37 (https://www.gencodegenes.org/human/release_43lift37.html) for biological data to ensure reproducibility.
+`reference-genome.fa` is the reference genome file in fasta format. We recommend to use Gencode [GRCh38 reference/annotation](https://www.gencodegenes.org/human/release_38.html) for simulated data and [GRCh37 reference/annotation](https://www.gencodegenes.org/human/release_43lift37.html) for biological data to ensure reproducibility.
 
 `length-of-paired-end-reads` is the length of the reads used to produce the alignment file (100 for simulated data, 150 for biological data).
 
@@ -25,19 +25,19 @@ The reconstructed circular transcripts shall be written as GTF format into `outp
 
 # Evaluate TERRACE
 
-1. Download - Download the appropriate ground truth file to evaluate output.gtf produced by TERRACE. The ground truth files for simulated data can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The ground truth files for simulated data are already in the standard gtf format. Ignore step 2 if you are evaluating on the simulated data. The ground truth files for the biological data can be downloaded from the isocirc catalog (https://genome.ucsc.edu/s/xinglab_chop/isoCirc). See step 2 to convert the biological ground truth to a standard gtf format adjusted for our evaluation pipeline.
+1. Download - Download the appropriate ground truth file to evaluate output.gtf produced by TERRACE. The ground truth files for simulated data can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The ground truth files for simulated data are already in the standard gtf format. Ignore step 2 if you are evaluating on the simulated data. The ground truth files for the biological data can be downloaded from the isocirc catalog (https://genome.ucsc.edu/s/xinglab_chop/isoCirc). To download groud the truth file, got to the [Table Browser](https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=1761281632_7eq71llIPltZklaNkDC972ZYv5N6&db=hg19&position=chr1:23356962-23380332&hgta_regionType=range), chosoe the appropriate `tissue` for the `track`, select `genome` for the `region` field, select output format as `GTF - gene transfer format (limited)`, and assign an `output filename` before clicking `get output`.  See step 2 to convert the biological ground truth to a standard gtf format adjusted for our evaluation pipeline.
 
 2. Convert - (Ignore this step if you are evaluating on simulated data) Convert the biological ground truth file to a standard gtf file adjusted for our evaluation pipeline using the script `convert_isocirc_gtf.py` provided. The usage is:
     ```
-    convert_isocirc_gtf.py <dowloaded-ground-truth.gtf> <ground-truth-adjusted.gtf>
+    python3 convert_isocirc_gtf.py <dowloaded-ground-truth.gtf> <ground-truth-adjusted.gtf>
     ```
 
 3. Sort - Sort both output.gtf and ground-truth.gtf using `sort_circ_gtf.py` script provided. The usage is:
     ```
-    sort_circ_gtf.py <input-file.gtf> <input-file-sorted.gtf>
+    python3 sort_circ_gtf.py <input-file.gtf> <input-file-sorted.gtf>
     ```
 4. Evaluate - Run the evaluation script `evaluate.sh` provided to get recall and precision for a given ground truth file (sorted) and predicted file (sorted). The usage is:
     ```
-    evaluate.sh <ground-truth-sorted.gtf> <output-sorted.gtf>
+    ./evaluate.sh <ground-truth-sorted.gtf> <output-sorted.gtf>
     ```
 
