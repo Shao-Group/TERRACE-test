@@ -18,7 +18,7 @@ The general instructions to run CIRI-vis is available https://ciri-cookbook.read
 
 It is recommended to run CIRI-full step by step instead of using the full pipeline. See the provided guideline script `ciri-full_command.sh` to ensure reprodicibility of results.
 
-`ciri-full_command.sh` uses bwa-aligner (https://sourceforge.net/projects/bio-bwa/files/), CIRI2.pl, CIRI_AS_v1.2.pl, CIRI-Full_v2.1.2.jar, CIRI-vis_v1.4.jar step by step to get the final output `[prefix].list` in the `vis_output` folder.
+`ciri-full_command.sh` uses bwa-aligner (https://sourceforge.net/projects/bio-bwa/files/), CIRI2.pl, CIRI_AS_v1.2.pl, CIRI-Full_v2.1.2.jar, CIRI-vis_v1.4.jar step by step to get the final output `[prefix].list` in the `vis_output` folder. Note that `ciri-full_command.sh` is a guiding script, you need to install dependencies and provide the necessary paths to files for the script to work. 
 
 `ciri-full_command.sh` shows the steps to run CIRI-full/CIRI-vis with reference annotation (`anno_file`). If you want to run CIRI-full without reference annotation, do not use the `anno_file`. Make sure to remove the parameters that use `anno_file` in the CIRI2.pl, CIRI_AS_v1.2.pl, and CIRI-Full_v2.1.2.jar Merge commands.
 

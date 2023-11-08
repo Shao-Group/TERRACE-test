@@ -11,9 +11,9 @@ CircAST uses a circRNA junction list from tools such as CIRCexplorer2, CIRI2. We
 
 See the provided guideline scripts `star_align.sh` and `circast_command.sh` to ensure reprodicibility of results.
 
-`star_align.sh` contains information to align paired-end RNA-seq reads using STAR (https://github.com/alexdobin/STAR) to produce `[prefix]_Aligned.sortedByCoord.out.bam` file. 
+`star_align.sh` contains information to align paired-end RNA-seq reads using STAR (https://github.com/alexdobin/STAR) to produce `[prefix]_Aligned.sortedByCoord.out.bam` file. Note that `star_align.sh` is a guiding script, you need to install dependencies and provide the necessary paths to files for the script to work. 
 
-`circast_command.sh` uses samtools(https://github.com/samtools/samtools), an input bam file (`[prefix]_Aligned.sortedByCoord.out.bam`), reference annotation file and the output from CIRI2 to produce the result file `CircAST_result.txt`.
+`circast_command.sh` uses samtools(https://github.com/samtools/samtools), an input bam file (`[prefix]_Aligned.sortedByCoord.out.bam`), reference annotation file and the output from CIRI2 to produce the result file `CircAST_result.txt`. Note that `circast_command.sh` is a guiding script, you need to install dependencies and provide the necessary paths to files for the script to work. 
 
 The simulated paired-end reads used in TERRACE can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The total-RNA paired-end reads from human tissues used in TERRACE can be downloaded from BIGD (accession number: PRJCA000751).
 

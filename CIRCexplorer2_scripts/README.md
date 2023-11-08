@@ -8,9 +8,9 @@ The general instructions to run CIRCexplorer2 is available in the CIRCexplorer2 
 
 CIRCexplorer2 needs to be run with specific parameters to ensure reproducibility of results. For details of the parameters used to run CIRCexplorer2, see the provided guideline scripts `star_align.sh` and `parse_and_annotate.sh`.
 
-`star_align.sh` contains information to align paired-end RNA-seq reads using STAR (https://github.com/alexdobin/STAR) to produce `[prefix]_Chimeric.out.junction` file. 
+`star_align.sh` contains information to align paired-end RNA-seq reads using STAR (https://github.com/alexdobin/STAR) to produce `[prefix]_Chimeric.out.junction` file. Note that `star_align.sh` is a guiding script, you need to install dependencies and provide the necessary paths to files for the script to work.
 
-`parse_and_annotate.sh` takes the `[prefix]_Chimeric.out.junction` as input to produce a list of circular RNAs `circularRNA_known.txt `. The reference annotation used when annotating should be converted to genepred format (see details in https://circexplorer2.readthedocs.io/en/latest/tutorial/setup/#setup).
+`parse_and_annotate.sh` takes the `[prefix]_Chimeric.out.junction` as input to produce a list of circular RNAs `circularRNA_known.txt `. The reference annotation used when annotating should be converted to genepred format (see details in https://circexplorer2.readthedocs.io/en/latest/tutorial/setup/#setup). Note that `parse_and_annotate.sh` is a guiding script, you need to install dependencies and provide the necessary paths to files for the script to work.
 
 The simulated paired-end reads used in TERRACE can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The total-RNA paired-end reads from human tissues used in TERRACE can be downloaded from BIGD (accession number: PRJCA000751).
 
