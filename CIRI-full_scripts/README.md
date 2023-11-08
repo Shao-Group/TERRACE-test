@@ -34,7 +34,7 @@ The output file `[prefix].list` from CIRI-vis is not in the standard gtf format.
 ./ciri-vis_to_gtf.sh <[prefix].list> <CIRI-full-output.gtf>
 ```
 
-# Evaluate CIRI-full
+# Evaluate CIRI-full/CIRI-vis
 
 1. Download - Download the appropriate ground truth file to evaluate CIRI-full-output.gtfproduced by CIRI-full. The ground truth files for simulated data can be downloaded from [doi:10.26208/AZ99-RQ38](https://doi.org/10.26208/AZ99-RQ38). The ground truth files for simulated data are already in the standard gtf format. Ignore step 2 if you are evaluating on the simulated data.
 
